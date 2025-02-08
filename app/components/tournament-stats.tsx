@@ -55,7 +55,7 @@ export function TournamentStats() {
                 </div>
               </TableCell>
               <TableCell className="text-right">
-                {tournament.prizePool ? `$${formatNumber(tournament.prizePool)}` : "-"}
+                {tournament.prizePool ? tournament.prizePool : "-"}
               </TableCell>
               <TableCell className="text-right">{formatNumber(tournament.hoursWatched ?? 0)}</TableCell>
               <TableCell className="text-right">{formatNumber(tournament.peakViewers ?? 0)}</TableCell>
